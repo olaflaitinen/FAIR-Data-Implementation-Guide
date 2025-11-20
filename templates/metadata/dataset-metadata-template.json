@@ -1,0 +1,60 @@
+{
+    "@context": "http://schema.org/",
+    "@type": "Dataset",
+    "name": "Dataset Title",
+    "description": "A comprehensive description of the dataset, including methodology and purpose.",
+    "url": "https://doi.org/10.5281/zenodo.XXXXXX",
+    "identifier": [
+        "https://doi.org/10.5281/zenodo.XXXXXX",
+        "10.5281/zenodo.XXXXXX"
+    ],
+    "keywords": [
+        "keyword1",
+        "keyword2",
+        "keyword3"
+    ],
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "isAccessibleForFree": true,
+    "creator": [
+        {
+            "@type": "Person",
+            "givenName": "First Name",
+            "familyName": "Last Name",
+            "email": "author@example.com",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "University or Institute Name"
+            },
+            "identifier": "https://orcid.org/0000-0000-0000-0000"
+        }
+    ],
+    "funder": {
+        "@type": "Organization",
+        "name": "Funding Agency Name"
+    },
+    "distribution": [
+        {
+            "@type": "DataDownload",
+            "encodingFormat": "text/csv",
+            "contentUrl": "https://example.com/data/file.csv"
+        }
+    ],
+    "temporalCoverage": "2020-01-01/2020-12-31",
+    "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+            "@type": "GeoShape",
+            "box": "39.3280 120.1633 40.445 123.7878"
+        }
+    },
+    "variableMeasured": [
+        {
+            "@type": "PropertyValue",
+            "name": "Variable Name",
+            "description": "Description of the variable",
+            "unitText": "Unit of measurement"
+        }
+    ],
+    "datePublished": "2025-01-01",
+    "version": "1.0"
+}

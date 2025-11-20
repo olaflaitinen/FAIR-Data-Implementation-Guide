@@ -1,0 +1,7 @@
+Variable Name,Description,Data Type,Unit,Allowable Values,Missing Value Code
+patient_id,Unique identifier for the patient,String,N/A,Alphanumeric,N/A
+age,Age of the patient at enrollment,Integer,Years,0-120,-99
+gender,Biological sex of the patient,Categorical,N/A,"M, F, Other",Unknown
+gene_expression,Normalized expression level of Gene X,Float,RPKM,>= 0,NaN
+treatment_group,Treatment administered to the patient,Categorical,N/A,"Control, Drug A, Drug B",N/A
+outcome,Clinical outcome after 30 days,Boolean,N/A,"0 (No), 1 (Yes)",N/A

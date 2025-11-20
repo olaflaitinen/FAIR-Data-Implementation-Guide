@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:dcterms="http://purl.org/dc/terms/">
+  
+  <!-- Title: A name given to the resource -->
+  <dc:title>Dataset Title</dc:title>
+  
+  <!-- Creator: An entity primarily responsible for making the resource -->
+  <dc:creator>Author Name</dc:creator>
+  
+  <!-- Subject: The topic of the resource -->
+  <dc:subject>Keyword 1</dc:subject>
+  <dc:subject>Keyword 2</dc:subject>
+  
+  <!-- Description: An account of the resource -->
+  <dc:description>A comprehensive description of the dataset content and methodology.</dc:description>
+  
+  <!-- Publisher: An entity responsible for making the resource available -->
+  <dc:publisher>Publisher or Repository Name</dc:publisher>
+  
+  <!-- Contributor: An entity responsible for making contributions to the resource -->
+  <dc:contributor>Contributor Name</dc:contributor>
+  
+  <!-- Date: A point or period of time associated with an event in the lifecycle of the resource -->
+  <dc:date>2025-01-01</dc:date>
+  
+  <!-- Type: The nature or genre of the resource -->
+  <dc:type>Dataset</dc:type>
+  
+  <!-- Format: The file format, physical medium, or dimensions of the resource -->
+  <dc:format>text/csv</dc:format>
+  
+  <!-- Identifier: An unambiguous reference to the resource within a given context -->
+  <dc:identifier>10.5281/zenodo.XXXXXX</dc:identifier>
+  
+  <!-- Source: A related resource from which the described resource is derived -->
+  <dc:source>Derived from Experiment X</dc:source>
+  
+  <!-- Language: A language of the resource -->
+  <dc:language>en</dc:language>
+  
+  <!-- Relation: A related resource -->
+  <dc:relation>10.5281/zenodo.RELATED_ID</dc:relation>
+  
+  <!-- Coverage: The spatial or temporal topic of the resource -->
+  <dc:coverage>2020-2025</dc:coverage>
+  
+  <!-- Rights: Information about rights held in and over the resource -->
+  <dc:rights>Creative Commons Attribution 4.0 International</dc:rights>
+  
+</metadata>

@@ -1,0 +1,33 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://doi.org/10.5281/zenodo.XXXXXX>
+  a dcat:Dataset ;
+  dct:title "Dataset Title"@en ;
+  dct:description "A comprehensive description of the dataset."@en ;
+  dct:identifier "10.5281/zenodo.XXXXXX" ;
+  dct:issued "2025-01-01"^^xsd:date ;
+  dct:modified "2025-01-01"^^xsd:date ;
+  dct:publisher <http://example.org/organization> ;
+  dct:creator <http://orcid.org/0000-0000-0000-0000> ;
+  dct:license <https://creativecommons.org/licenses/by/4.0/> ;
+  dcat:keyword "keyword1", "keyword2", "keyword3" ;
+  dcat:distribution <https://example.org/distribution/001> .
+
+<http://example.org/organization>
+  a foaf:Organization ;
+  foaf:name "Organization Name" .
+
+<http://orcid.org/0000-0000-0000-0000>
+  a foaf:Person ;
+  foaf:name "Author Name" ;
+  foaf:mbox <mailto:author@example.com> .
+
+<https://example.org/distribution/001>
+  a dcat:Distribution ;
+  dct:title "CSV Distribution" ;
+  dcat:accessURL <https://example.org/data/file.csv> ;
+  dcat:mediaType "text/csv" ;
+  dcat:byteSize "1024000"^^xsd:decimal .
