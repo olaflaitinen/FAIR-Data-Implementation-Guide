@@ -1,0 +1,35 @@
+name: FAIR Compliance Check
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  validate-metadata:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.9'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install jsonschema
+        
+    - name: Validate JSON Metadata
+      run: |
+        # Find all JSON files in the templates directory and validate them
+        # Note: In a real scenario, you would validate actual data files against a schema
+        # This example checks if the templates themselves are valid JSON
+        find templates/metadata -name "*.json" -print0 | xargs -0 -I {} python -c "import json; json.load(open('{}'))"
+        
+    - name: Run FAIR Compliance Script
+      run: |
+        # Run the custom compliance script on the example metadata
+        python scripts/validation/check-fair-compliance.py
