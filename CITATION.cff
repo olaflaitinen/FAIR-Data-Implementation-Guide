@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this repository in your research or implementation, please cite it as below."
+authors:
+  - family-names: "Contributors"
+    given-names: "FAIR Data Implementation Guide"
+title: "FAIR Data Implementation Guide: Templates, checklists, and code snippets for making life sciences datasets FAIR"
+version: 1.0.0
+date-released: 2025-11-20
+url: "https://github.com/[username]/FAIR-Data-Implementation-Guide"
+keywords:
+  - FAIR principles
+  - data management
+  - life sciences
+  - open science
+  - reproducibility
+  - data stewardship
+license: MIT
+type: software
